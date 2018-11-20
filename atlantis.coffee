@@ -7,7 +7,7 @@ renderer.setSize element.clientWidth, element.clientHeight
 # renderer.setClearColor( 0xffffff, 0)
 renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio || 1)
 # OBJ exporter
-exporter = new THREE.OBJExporter
+exporter = new THREE.STLExporter
 #########################################################################
 
 light = new THREE.PointLight( 0xffffff, 3, 100 )
@@ -19,16 +19,16 @@ material = new THREE.MeshLambertMaterial( { color: 0xff530f } )
 cube = new THREE.Mesh( geometry, material )
 scene.add( cube )
 
-cubeOBJ = exporter.parse( cube )
+cubeSTL = exporter.parse( cube )
 
-console.log cubeOBJ
+console.log cubeSTL
 console.log "Hello World!"
 
-container = document.getElementById("obj-data")
-container.textContent += cubeOBJ
+container = document.getElementById("stl-data")
+container.textContent += cubeSTL
 
-blob = new Blob([cubeOBJ], {type: "text/plain;charset=utf-8"})
-saveAs(blob, "hello world.obj")
+blob = new Blob([cubeSTL], {type: "text/plain;charset=utf-8"})
+saveAs(blob, "hello world.stl")
 
 #########################################################################
 controls = new THREE.OrbitControls(camera, renderer.domElement)
