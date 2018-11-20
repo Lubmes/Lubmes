@@ -9,7 +9,7 @@ Hier een verhaal dat van alles uitlegt over het element en zijn samenhang.
 
 ### Praktisch
 
-Momenteel is deze manier van stl-bestanden genereren te technische uitdagend om te veranderen.
+Momenteel is het te technisch uitdagend om deze manier van stl-bestanden genereren te veranderen.
 
     # Genereren file.
     elementSTL = exporter.parse( element )
