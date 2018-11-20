@@ -28,7 +28,7 @@ container = document.getElementById("obj-data")
 container.textContent += cubeOBJ
 
 blob = new Blob([cubeOBJ], {type: "text/plain;charset=utf-8"})
-# saveAs(blob, "hello world.obj")
+saveAs(blob, "hello world.obj")
 
 #########################################################################
 controls = new THREE.OrbitControls(camera, renderer.domElement)
