@@ -47,7 +47,7 @@
     type: "text/plain;charset=utf-8"
   });
 
-  saveAs(blob, "element.stl"); // Verwijder comment wanneer je de stl-file (opnieuw) wilt genereren.
+  // saveAs(blob, "element.stl"); // Verwijder comment wanneer je de stl-file (opnieuw) wilt genereren.
 
   // Camera die interactief controleerbaar is.
   controls = new THREE.OrbitControls(camera, renderer.domElement);

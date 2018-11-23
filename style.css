@@ -17,11 +17,10 @@ font-family: 'Cinzel Decorative', cursive;
 font-family: 'Clicker Script', cursive;
 font-family: 'Gilda Display', serif;*/
 
-/* defaults */
+/*
 body {
   margin: 0;
   background-color: #92e0ff;
-  /* color: #f9f9ea; */
 }
 #three-js-canvas {
   width: 100%;
@@ -31,19 +30,17 @@ body {
 }
 a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: #3500a7;
 }
 a:hover {
-  /* color: #87db99; */
   color: #81f19a;
 }
-/* Colors */
 .light-blue {
-  color: #92e0ff; 
+  color: #92e0ff;
 }
 .dark-blue {
-  color: #190247; 
+  color: #190247;
 }
 .yellow {
   color: #fdf36b;
@@ -58,7 +55,7 @@ a:hover {
   color: #ff809d;
 }
 .faded {
-  color: #49209b;  
+  color: #49209b;
 }
 .vue-green {
   color: #1b8f1b;
@@ -66,21 +63,17 @@ a:hover {
 .ruby-red {
   color: #7a0e0e;
 }
-/* Override for simplicity */
 .light-blue, .yellow, .brown, .light.pink, .vue-green, .ruby-red {
   color: #045421;
 }
 .brand {
   color: #285757;
 }
-/* Text Flair */
 .brand {
   letter-spacing: 3px;
 }
-/* About ME */
 #article {
   color: #0300a7;
-  /* width: 100%; */
   margin-left: 9%;
   margin-right: 9%;
 }
@@ -123,5 +116,4 @@ img#logo {
 }
 #gallery-controls a:hover {
   color: #81f19a;
-}
-  
+} */
