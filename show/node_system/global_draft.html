@@ -1,11 +1,7 @@
 <html>
     <head>
-      <title>Lubmesch</title>
-      <link href="https://fonts.googleapis.com/css?family=Atomic+Age|Average|BenchNine|Cabin+Sketch
-        |Cinzel+Decorative|Clicker+Script|Gilda+Display|Josefin+Sans|Julius+Sans+One|Lalezar
-        |Maven+Pro|Philosopher|Proza+Libre|Reenie+Beanie|Ruslan+Display|Syncopate|Varela" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Mijn stijlsheet -->
+      <title>Lubmes</title>
+        <link rel="stylesheet" href="../../lib/paper.min.css">
         <link href="../../style.css" rel="stylesheet">
     </head>
     <body>
@@ -14,14 +10,53 @@
       <script src="../../lib/STLExporter.js"></script>
       <script src="../../lib/FileSaver.js"></script>
 
+      <nav class="fixed">
+        <div class="nav-brand">
+          <h3><a href="../../index.html">Lubmes</a></h3>
+        </div>
+        <div class="collapsible">
+          <input id="collapsible1" type="checkbox" name="collapsible1">
+          <button>
+          <label for="collapsible1">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </label>
+          </button>
+          <div class="collapsible-body">
+            <ul class="inline">
+              <li><a href="#">Documentatie</a></li>
+              <li><a href="../../project.html">Dit project</a></li>
+              <li><a href="https://github.com/Lubmes/Lubmes">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <canvas id='three-js-canvas'></canvas>
 
-      <div id='article'>
+      <div class="row">
+        <div class="col-9 col">
+          <br><br><br>
+          <article class="article">
+            <!-- <p>
+              Verhaaltje over bovenstaande met code.
+            <p> -->
+          </article>
+        </div>
+        <div class="col-3 col">
+          <div class="container">
 
-        <p>
-          ... .litcoffee render hier ter begeleiding ...
-        </p>
-
+            <h2>Elementen</h2>
+            <ul>
+              <li><a href="./show/element/cube.html">Kubus (voorbeeld)</a></li>
+            </ul>
+            <h2>Node-stelsels</h2>
+            <ul>
+              <li><a href='./show/node_system/global_draft.html'>Overzichtsschets geheel</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <script src="../../project/js/cube.js"></script>
